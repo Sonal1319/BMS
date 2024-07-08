@@ -20,5 +20,5 @@ public class Show extends BaseModel{
     @ManyToOne
     private Auditorium auditorium;
     @OneToMany
-    private List<ShowSeat> showSeat;
+    private List<ShowSeat> showSeat; // TBD
 }

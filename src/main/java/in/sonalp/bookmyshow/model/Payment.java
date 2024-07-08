@@ -16,12 +16,12 @@ import java.time.LocalDateTime;
 @Entity
 public class Payment extends BaseModel{
     private LocalDateTime paymentTime;
-    private double Amount;
+    private double amount;
     private String referenceId;
     @ManyToOne
     private Ticket ticket;
     @Enumerated(EnumType.STRING)
     private PaymentStatus paymentStatus;
     @Enumerated(EnumType.STRING)
-    private PaymentMode paymentModes;
+    private PaymentMode paymentMode;
 }

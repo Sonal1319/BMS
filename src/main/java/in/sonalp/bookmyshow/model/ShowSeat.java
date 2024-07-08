@@ -11,7 +11,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-public class ShowSeat extends BaseModel{
+public class ShowSeat extends BaseModel {
     private int price;
     @ManyToOne
     private Show show;

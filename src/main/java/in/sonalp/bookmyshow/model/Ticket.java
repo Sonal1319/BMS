@@ -13,7 +13,7 @@ import java.util.List;
 @Entity
 public class Ticket extends BaseModel{
     private LocalDateTime timeOfBooking;
-    private double amount;
+    private double totalAmount;
     @OneToMany
     private List<ShowSeat> showSeats;
     @ManyToOne

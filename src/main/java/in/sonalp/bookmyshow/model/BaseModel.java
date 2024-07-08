@@ -9,12 +9,12 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 @MappedSuperclass
-public class BaseModel {
-    @Id
+public abstract class BaseModel {
+    @Id // tells that the attribute private int id is the primary key
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "ID")
-    private int id;
-    @Column(name = "CREATED AT")
+    private int id; // primary key
+    @Column(name = "CREATED_AT")
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private String createdBy;
